@@ -16,7 +16,7 @@ function NavItem({ children, href }: Props) {
     <Link
       href={href}
       className={`border-b-4 p-4 ${
-        active ? "border-red-400" : "border-stone-100/50"
+        active ? "border-red-500" : "border-stone-100/50"
       }`}
     >
       {children}
