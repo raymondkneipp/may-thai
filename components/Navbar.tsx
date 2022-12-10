@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Container from "./Container";
-import Logo from "./logo";
+import Logo from "./Logo";
 
 interface Props {
   children: string;
@@ -16,7 +16,7 @@ function NavItem({ children, href }: Props) {
     <Link
       href={href}
       className={`border-b-4 p-4 ${
-        active ? "border-red-500" : "border-stone-100/50"
+        active ? "border-red-500" : "border-stone-100/10"
       }`}
     >
       {children}
