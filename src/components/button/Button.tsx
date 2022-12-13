@@ -19,16 +19,16 @@ const button = cva("rounded-2xl font-bold uppercase flex gap-3", {
   },
 });
 
-export interface ButtonProps
+interface ButtonProps
   extends React.HTMLAttributes<HTMLAnchorElement>,
     VariantProps<typeof button> {
   href: string;
-  children: string;
+  label: string;
   icon?: React.ReactNode;
 }
 
-export default function Button({
-  children,
+export function Button({
+  label,
   href,
   className,
   intent,
@@ -42,7 +42,7 @@ export default function Button({
       className={button({ intent, size, className })}
       {...props}
     >
-      {children}
+      {label}
 
       {icon}
     </Link>

@@ -1,15 +1,13 @@
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-
+import { Navbar, Footer, Hero } from "@components";
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-      <div>
-        <h2>Menu</h2>
-      </div>
-      <footer></footer>
+      {/* Testimonials */}
+      {/* Menu */}
+      {/* Contact */}
+      <Footer />
     </>
   );
 }
