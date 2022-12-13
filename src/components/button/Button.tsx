@@ -4,8 +4,16 @@ import { cva, type VariantProps } from "class-variance-authority";
 const button = cva("rounded-2xl font-bold uppercase flex gap-3", {
   variants: {
     intent: {
-      primary: ["bg-gradient-to-r from-red-600 to-red-500", "text-white"],
-      secondary: ["bg-gradient-to-r from-stone-600 to-stone-500", "text-white"],
+      primary: [
+        "bg-gradient-to-r from-red-600 to-red-500",
+        "text-white",
+        "shadow-xl shadow-red-400",
+      ],
+      secondary: [
+        "bg-gradient-to-r from-stone-600 to-stone-500",
+        "text-white",
+        "shadow-xl shadow-stone-400",
+      ],
     },
     size: {
       small: ["text-sm", "py-1", "px-2"],
