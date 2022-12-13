@@ -65,7 +65,7 @@ export function Footer() {
             <dt className="font-bold text-sm">Hours</dt>
 
             {daysOfWeek.map((day) => (
-              <dd className="text-stone-600">
+              <dd className="text-stone-600" key={day}>
                 {day.slice(0, 3)}: {getHoursFromDay(day)}
               </dd>
             ))}
@@ -76,7 +76,7 @@ export function Footer() {
 
             <ul>
               {NAV_ROUTES.map((page) => (
-                <li>
+                <li key={page.label}>
                   <Link href={page.href}>{page.label}</Link>
                 </li>
               ))}
