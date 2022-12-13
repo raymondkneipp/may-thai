@@ -4,3 +4,4 @@ export * from "./hero";
 export * from "./button";
 export * from "./container";
 export * from "./logo";
+export * from "./testimonials";

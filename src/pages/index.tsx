@@ -1,10 +1,10 @@
-import { Navbar, Footer, Hero } from "@components";
+import { Navbar, Footer, Hero, Testimonials } from "@components";
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-      {/* Testimonials */}
+      <Testimonials />
       {/* Menu */}
       {/* Contact */}
       <Footer />
