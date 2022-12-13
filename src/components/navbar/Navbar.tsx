@@ -10,7 +10,7 @@ export function Navbar() {
 
         <div className="flex items-center">
           {NAV_ROUTES.map((page) => (
-            <NavbarItem key={page.href} href={page.href}>
+            <NavbarItem key={page.label} href={page.href}>
               {page.label}
             </NavbarItem>
           ))}
