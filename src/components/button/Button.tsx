@@ -14,6 +14,11 @@ const button = cva("rounded-2xl font-bold uppercase flex gap-3", {
         "text-white",
         "shadow-xl shadow-stone-400",
       ],
+      light: [
+        "bg-gradient-to-r from-stone-200 to-stone-100",
+        "text-stone-900",
+        "shadow-xl shadow-red-300",
+      ],
     },
     size: {
       small: ["text-sm", "py-1", "px-2"],
