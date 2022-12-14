@@ -60,9 +60,6 @@ export const PHONE_NUMBERS = ["513-248-9100", "513-248-4089"];
 interface Testimonial {
   author: string;
   reviewBody: string;
-  reviewRating: {
-    ratingValue: "1" | "2" | "3" | "4" | "5";
-  };
 }
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -70,24 +67,15 @@ export const TESTIMONIALS: Testimonial[] = [
     author: "Jan Chaney",
     reviewBody:
       "Love May Thai in Milford!  The people working there are so friendly and efficient. Food is flavorful and they serve plenty of it. My favorite is their Sweet and Sour chicken and Tom Yum soup and I add rice noodles to it.",
-    reviewRating: {
-      ratingValue: "5",
-    },
   },
   {
     author: "Kelsey Wallace",
     reviewBody:
       "Stop in for a quick dinner before a class and this was the spot!! The waitress was so friendly and accommodating! The food was incredible, a lot of flavor!! The decor was so cute too!! Definitely will be back!!",
-    reviewRating: {
-      ratingValue: "5",
-    },
   },
   {
     author: "Joyce Bucci",
     reviewBody:
       "These days it can be difficult to arrange for a large party to go out to dinner. My group of 12 friends was able to get a reservation at May Thai, and we were so happy with everything. Our table was ready, and the service and the food were excellent.",
-    reviewRating: {
-      ratingValue: "5",
-    },
   },
 ];
