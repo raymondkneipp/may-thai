@@ -33,7 +33,12 @@ export function Hero() {
             {...ROUTES.menu}
             label="View Menu"
           />
-          <Button size="large" {...ROUTES.location} intent="secondary" />
+          <Button
+            size="large"
+            {...ROUTES.location}
+            label="Get Directions"
+            intent="secondary"
+          />
         </div>
       </Container>
 
