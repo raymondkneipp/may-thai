@@ -1,4 +1,4 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
+const { fontFamily, backgroundSize } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -16,6 +16,10 @@ module.exports = {
       },
       fontFamily: {
         fancy: ["var(--font-ballantines)", ...fontFamily.sans],
+      },
+      backgroundSize: {
+        ...backgroundSize,
+        wide: "200%",
       },
     },
   },
