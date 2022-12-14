@@ -14,7 +14,7 @@ export function Hero() {
           Thai curries & stir-fries, plus a few Chinese dishes, in a modern,
           sunset-colored dining room.
         </p>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap items-center justify-center">
           <Button
             size="large"
             icon={
