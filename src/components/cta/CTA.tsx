@@ -12,7 +12,7 @@ export function CTA() {
           Come and have a meal with us today, or give us a call to place an
           order for take out. We look forward to serving you.
         </p>
-        <div className="flex gap-4 flex-wrap items-center justify-center">
+        <div className="flex gap-3 flex-wrap items-center justify-center">
           <Button
             size="large"
             intent="light"

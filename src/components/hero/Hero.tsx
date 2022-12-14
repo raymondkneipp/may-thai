@@ -5,7 +5,7 @@ import Image from "next/image";
 export function Hero() {
   return (
     <section className="bg-stone-200 relative overflow-hidden">
-      <Container className="flex flex-col items-center text-center md:items-start md:text-left gap-4 py-36 z-30 relative">
+      <Container className="flex flex-col items-center text-center md:items-start md:text-left gap-3 py-36 z-30 relative">
         <h1 className="font-fancy leading-fancy text-fancy">
           <span className="text-red-600">Thai</span> Bistro &<br />
           <span className="text-red-600">Chinese</span> Cuisine
@@ -14,7 +14,7 @@ export function Hero() {
           Thai curries & stir-fries, plus a few Chinese dishes, in a modern,
           sunset-colored dining room.
         </p>
-        <div className="flex gap-4 flex-wrap items-center justify-center">
+        <div className="flex gap-3 flex-wrap items-center justify-center">
           <Button
             size="large"
             icon={

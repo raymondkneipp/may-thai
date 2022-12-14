@@ -6,7 +6,7 @@ export function Testimonials() {
     <section className="py-12">
       <Container className="flex flex-col gap-6">
         <h2 className="font-fancy text-6xl text-center text-red-600">
-          Testimonials
+          Testimonials{" "}
         </h2>
 
         <div className="grid gap-12">

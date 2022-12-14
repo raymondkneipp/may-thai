@@ -1,6 +1,6 @@
 import { cva, type VariantProps } from "class-variance-authority";
 
-const container = cva("container mx-auto px-4");
+const container = cva("container mx-auto px-3");
 
 interface ContainerProps
   extends React.HTMLAttributes<HTMLDivElement>,

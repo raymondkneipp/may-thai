@@ -29,12 +29,12 @@ function getHoursFromDay(dayofWeek: DayOfWeek) {
 
 export function Footer() {
   return (
-    <footer className="bg-stone-200 py-8">
+    <footer className="bg-stone-200 py-12">
       <Container>
         <div className="flex items-start justify-between">
           <Logo />
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             <div>
               <h2 className="font-bold text-sm">Address</h2>
               <address className="text-stone-600 not-italic">

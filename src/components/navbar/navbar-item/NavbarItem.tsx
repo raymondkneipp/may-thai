@@ -13,8 +13,10 @@ export function NavbarItem({ children, href }: Props) {
   return (
     <Link
       href={href}
-      className={`border-b-4 p-4 ${
-        active ? "border-red-500" : "border-stone-900/10"
+      className={`py-3 px-6 rounded-2xl ${
+        active
+          ? "bg-stone-50 shadow-xl shadow-stone-200 text-red-600"
+          : "border-stone-900/10 hover:bg-stone-50 hover:shadow-xl hover:shadow-stone-200 hover:text-red-600 transition-all duration-300"
       }`}
     >
       {children}

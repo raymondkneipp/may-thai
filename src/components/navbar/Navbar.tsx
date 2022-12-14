@@ -5,10 +5,10 @@ import { NavbarItem } from "./navbar-item";
 export function Navbar() {
   return (
     <Container>
-      <nav className="flex items-center justify-between py-4">
+      <nav className="flex items-center justify-between py-3">
         <Logo />
 
-        <div className="flex items-center">
+        <div className="flex items-center gap-3">
           {NAV_ROUTES.map((page) => (
             <NavbarItem key={page.label} href={page.href}>
               {page.label}

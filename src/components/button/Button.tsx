@@ -17,15 +17,15 @@ const button = cva(
           "shadow-xl shadow-stone-400",
         ],
         light: [
-          "bg-gradient-to-r from-stone-200 via-white to-stone-100",
+          "bg-gradient-to-r from-stone-300 via-stone-100 to-stone-200",
           "text-stone-900",
           "shadow-xl shadow-red-300",
         ],
       },
       size: {
         small: ["text-sm", "py-1", "px-2"],
-        medium: ["text-base", "py-2.5", "px-5"],
-        large: ["text-base", "py-3.5", "px-6"],
+        medium: ["text-base", "py-3", "px-6"],
+        large: ["text-base", "py-4", "px-7"],
       },
     },
     defaultVariants: {
