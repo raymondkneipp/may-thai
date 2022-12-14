@@ -1,36 +1,39 @@
 import Link from "next/link";
 import { cva, type VariantProps } from "class-variance-authority";
 
-const button = cva("rounded-2xl font-bold uppercase flex gap-3", {
-  variants: {
-    intent: {
-      primary: [
-        "bg-gradient-to-r from-red-600 to-red-500",
-        "text-white",
-        "shadow-xl shadow-red-400",
-      ],
-      secondary: [
-        "bg-gradient-to-r from-stone-600 to-stone-500",
-        "text-white",
-        "shadow-xl shadow-stone-400",
-      ],
-      light: [
-        "bg-gradient-to-r from-stone-200 to-stone-100",
-        "text-stone-900",
-        "shadow-xl shadow-red-300",
-      ],
+const button = cva(
+  "rounded-2xl font-bold uppercase flex gap-3 bg-wide bg-[0%] transition-all hover:bg-[100%] duration-300",
+  {
+    variants: {
+      intent: {
+        primary: [
+          "bg-gradient-to-r from-red-600 via-red-400 to-red-500",
+          "text-white",
+          "shadow-xl shadow-red-400",
+        ],
+        secondary: [
+          "bg-gradient-to-r from-stone-600 via-stone-400 to-stone-500",
+          "text-white",
+          "shadow-xl shadow-stone-400",
+        ],
+        light: [
+          "bg-gradient-to-r from-stone-200 via-white to-stone-100",
+          "text-stone-900",
+          "shadow-xl shadow-red-300",
+        ],
+      },
+      size: {
+        small: ["text-sm", "py-1", "px-2"],
+        medium: ["text-base", "py-2.5", "px-5"],
+        large: ["text-base", "py-3.5", "px-6"],
+      },
     },
-    size: {
-      small: ["text-sm", "py-1", "px-2"],
-      medium: ["text-base", "py-2.5", "px-5"],
-      large: ["text-base", "py-3.5", "px-6"],
+    defaultVariants: {
+      intent: "primary",
+      size: "medium",
     },
-  },
-  defaultVariants: {
-    intent: "primary",
-    size: "medium",
-  },
-});
+  }
+);
 
 interface ButtonProps
   extends React.HTMLAttributes<HTMLAnchorElement>,
