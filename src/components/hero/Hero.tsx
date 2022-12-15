@@ -13,7 +13,7 @@ export function Hero() {
           <span className="text-red-600">Thai</span> Bistro &<br />
           <span className="text-red-600">Chinese</span> Cuisine
         </h1>
-        <p className="text-lg max-w-sm">
+        <p className="text-lg max-w-sm xl:max-w-md">
           Thai curries & stir-fries, plus a few Chinese dishes, in a modern,
           sunset-colored dining room.
         </p>
