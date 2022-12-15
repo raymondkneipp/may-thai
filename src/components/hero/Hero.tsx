@@ -1,10 +1,13 @@
 import { ROUTES } from "@constants";
-import { Button, Container } from "@components";
+import { Button, Container, Navbar } from "@components";
 import Image from "next/image";
 
 export function Hero() {
   return (
     <section className="bg-stone-200 relative overflow-hidden">
+      <div className="relative z-50">
+        <Navbar />
+      </div>
       <Container className="flex flex-col items-center text-center md:items-start md:text-left gap-3 py-36 z-30 relative">
         <h1 className="font-fancy leading-fancy text-fancy">
           <span className="text-red-600">Thai</span> Bistro &<br />
@@ -46,7 +49,7 @@ export function Hero() {
       <Image
         src="/dish.png"
         alt="thai dish"
-        className="z-0 md:z-10 absolute bottom-0 translate-y-1/2 md:left-1/2 md:inset-0 md:translate-y-0"
+        className="z-0 md:z-10 md:top-24 absolute bottom-0 translate-y-1/2 md:left-1/2 md:inset-0 md:translate-y-0"
         width="900"
         height="900"
       />
