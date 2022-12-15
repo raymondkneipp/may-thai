@@ -11,7 +11,7 @@ export function Testimonials() {
 
         <div className="grid gap-12">
           {TESTIMONIALS.map((review) => (
-            <blockquote className="shadow-xl shadow-stone-200 p-6 rounded-2xl bg-stone-50 relative flex flex-col items-center gap-3 odd:ml-auto even:mr-auto md:w-2/3">
+            <blockquote className="shadow-xl shadow-stone-200 p-6 rounded-2xl bg-stone-50 relative flex flex-col items-center gap-3 odd:ml-auto even:mr-auto md:w-2/3 odd:-rotate-1 even:rotate-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMidYMid meet"
