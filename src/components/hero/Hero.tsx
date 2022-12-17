@@ -38,8 +38,8 @@ export function Hero() {
           />
           <Button
             size="large"
-            {...ROUTES.location}
             label="Get Directions"
+            href="/"
             intent="secondary"
           />
         </div>

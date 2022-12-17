@@ -16,18 +16,9 @@ export const ROUTES = {
     href: "/contact",
     label: "Contact",
   },
-  location: {
-    href: "/location",
-    label: "Location",
-  },
 };
 
-export const NAV_ROUTES: Route[] = [
-  ROUTES.home,
-  ROUTES.menu,
-  ROUTES.contact,
-  ROUTES.location,
-];
+export const NAV_ROUTES: Route[] = [ROUTES.home, ROUTES.menu, ROUTES.contact];
 
 export const OPENING_HOURS = [
   {
