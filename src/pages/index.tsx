@@ -1,15 +1,14 @@
-import { Footer, Hero, Testimonials, CTA, Gallery, Map } from "@components";
+import { Footer, Hero, Testimonials, CTA, Gallery } from "@components";
+import { LandingLayout } from "@layouts";
+
 export default function Home() {
   return (
-    <>
+    <LandingLayout>
       <Hero />
       <Testimonials />
-      {/* Menu */}
-      {/* Contact */}
       <Gallery />
-      <Map />
       <CTA />
       <Footer />
-    </>
+    </LandingLayout>
   );
 }
