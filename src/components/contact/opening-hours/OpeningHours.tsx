@@ -1,4 +1,6 @@
 import { OPENING_HOURS } from "@constants";
+import { Card } from "@components";
+import { BsClock } from "react-icons/bs";
 
 const daysOfWeek = [
   "Monday",
@@ -37,14 +39,12 @@ function getHoursFromDay(dayofWeek: DayOfWeek) {
 
 export const OpeningHours: React.FC = () => {
   return (
-    <dl>
-      <dt className="font-bold text-lg">Hours</dt>
-
+    <Card icon={BsClock} label="Hours">
       {daysOfWeek.map((day) => (
-        <dd className="text-stone-600" key={day}>
+        <p className="text-stone-600" key={day}>
           {day.slice(0, 3)}: {getHoursFromDay(day)}
-        </dd>
+        </p>
       ))}
-    </dl>
+    </Card>
   );
 };

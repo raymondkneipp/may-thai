@@ -1,12 +1,15 @@
 import { ADDRESS } from "@constants";
-export function Address() {
+import { Card } from "@components";
+import { BsGeoAlt } from "react-icons/bs";
+
+export const Address: React.FC = () => {
   return (
-    <div>
-      <h2 className="font-bold text-lg">Address</h2>
+    <Card icon={BsGeoAlt} label="Address">
       <address className="text-stone-600 not-italic">
-        {ADDRESS.streetAddress}, {ADDRESS.addressLocality},{" "}
-        {ADDRESS.addressRegion}, {ADDRESS.postalCode}
+        {ADDRESS.streetAddress}
+        <br />
+        {ADDRESS.addressLocality}, {ADDRESS.addressRegion}, {ADDRESS.postalCode}
       </address>
-    </div>
+    </Card>
   );
-}
+};

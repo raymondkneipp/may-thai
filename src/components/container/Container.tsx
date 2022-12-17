@@ -9,6 +9,9 @@ interface ContainerProps
   className?: string;
 }
 
-export function Container({ children, className }: ContainerProps) {
+export const Container: React.FC<ContainerProps> = ({
+  children,
+  className,
+}) => {
   return <div className={container({ className })}>{children}</div>;
-}
+};

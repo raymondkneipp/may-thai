@@ -1,7 +1,7 @@
 import { Button, Container } from "@components";
 import { PHONE_NUMBERS } from "@constants";
 
-export function CTA() {
+export const CTA: React.FC = () => {
   return (
     <section className="bg-red-600 py-12">
       <Container className="flex flex-col items-center gap-6 max-w-screen-sm">
@@ -29,4 +29,4 @@ export function CTA() {
       </Container>
     </section>
   );
-}
+};

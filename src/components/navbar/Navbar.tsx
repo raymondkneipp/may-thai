@@ -2,7 +2,7 @@ import { NAV_ROUTES } from "@constants";
 import { Container, Logo } from "@components";
 import { NavbarItem } from "./navbar-item";
 
-export function Navbar() {
+export const Navbar: React.FC = () => {
   return (
     <Container>
       <nav className="flex items-center justify-between py-3">
@@ -18,4 +18,4 @@ export function Navbar() {
       </nav>
     </Container>
   );
-}
+};

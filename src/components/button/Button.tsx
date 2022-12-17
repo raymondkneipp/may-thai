@@ -43,7 +43,7 @@ interface ButtonProps
   icon?: React.ReactNode;
 }
 
-export function Button({
+export const Button: React.FC<ButtonProps> = ({
   label,
   href,
   className,
@@ -51,7 +51,7 @@ export function Button({
   size,
   icon = null,
   ...props
-}: ButtonProps) {
+}) => {
   return (
     <Link
       href={href}
@@ -63,4 +63,4 @@ export function Button({
       {icon}
     </Link>
   );
-}
+};

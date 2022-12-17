@@ -2,16 +2,17 @@ import {
   Address,
   Container,
   Phone,
-  AlternatePhone,
   OpeningHours,
   Logo,
+  Card,
 } from "@components";
 import { NAV_ROUTES } from "@constants";
 import Link from "next/link";
+import { BsLink45Deg } from "react-icons/bs";
 
-export function Footer() {
+export const Footer: React.FC = () => {
   return (
-    <footer className="bg-stone-200 py-12">
+    <footer className="py-12">
       <Container>
         <div className="flex items-start justify-between">
           <Logo />
@@ -19,13 +20,11 @@ export function Footer() {
           <div className="flex flex-col gap-3">
             <Address />
             <Phone />
-            <AlternatePhone />
           </div>
 
           <OpeningHours />
 
-          <div>
-            <h2 className="text-lg font-bold">Pages</h2>
+          <Card icon={BsLink45Deg} label="Pages">
             <ul>
               {NAV_ROUTES.map((route) => (
                 <li key={route.label}>
@@ -33,7 +32,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </Card>
         </div>
 
         <Link href="https://raymondkneipp.com">
@@ -42,4 +41,4 @@ export function Footer() {
       </Container>
     </footer>
   );
-}
+};

@@ -1,4 +1,4 @@
-export function Logo() {
+export const Logo: React.FC = () => {
   return (
     <svg
       className="w-28 h-28"
@@ -18,4 +18,4 @@ export function Logo() {
       </g>
     </svg>
   );
-}
+};

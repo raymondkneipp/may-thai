@@ -1,7 +1,7 @@
 import { Container } from "@components";
 import Image from "next/image";
 
-export function Gallery() {
+export const Gallery: React.FC = () => {
   return (
     <section className="py-12">
       <Container className="flex">
@@ -40,4 +40,4 @@ export function Gallery() {
       </Container>
     </section>
   );
-}
+};

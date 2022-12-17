@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { PHONE_NUMBERS } from "@constants";
+import { Card } from "@components";
+import { BsTelephone } from "react-icons/bs";
 
-export function Phone() {
+export const Phone: React.FC = () => {
   return (
-    <dl>
-      <dt className="font-bold text-lg">Phone</dt>
-      <dd className="text-stone-600">
-        <Link href={`tel:${PHONE_NUMBERS[0]}`}>{PHONE_NUMBERS[0]}</Link>
-      </dd>
-    </dl>
+    <Card icon={BsTelephone} label="Phone">
+      <Link href={`tel:${PHONE_NUMBERS[0]}`}>{PHONE_NUMBERS[0]}</Link>
+      <Link href={`tel:${PHONE_NUMBERS[1]}`}>{PHONE_NUMBERS[1]}</Link>
+    </Card>
   );
-}
+};

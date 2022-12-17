@@ -1,7 +1,7 @@
 import { TESTIMONIALS } from "@constants";
 import { Container } from "@components";
 
-export function Testimonials() {
+export const Testimonials: React.FC = () => {
   return (
     <section className="py-12">
       <Container className="flex flex-col gap-6">
@@ -53,4 +53,4 @@ export function Testimonials() {
       </Container>
     </section>
   );
-}
+};

@@ -46,7 +46,7 @@ export const ADDRESS = {
   addressCountry: "US",
 };
 
-export const PHONE_NUMBERS = ["513-248-9100", "513-248-4089"];
+export const PHONE_NUMBERS = ["(513) 248-9100", "(513) 248-4089"];
 
 interface Testimonial {
   author: string;

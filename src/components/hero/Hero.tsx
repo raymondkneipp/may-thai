@@ -2,7 +2,7 @@ import { ROUTES } from "@constants";
 import { Button, Container, Navbar } from "@components";
 import Image from "next/image";
 
-export function Hero() {
+export const Hero: React.FC = () => {
   return (
     <section className="bg-stone-200 relative overflow-hidden">
       <div className="relative z-50">
@@ -56,4 +56,4 @@ export function Hero() {
       <div className="bg-stone-100/75 absolute inset-0"></div>
     </section>
   );
-}
+};

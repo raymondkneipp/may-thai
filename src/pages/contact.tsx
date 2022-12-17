@@ -1,6 +1,5 @@
 import {
   Address,
-  AlternatePhone,
   Container,
   Footer,
   Map,
@@ -24,10 +23,13 @@ export default function Contact() {
           assumenda sunt, expedita quidem, est sint reiciendis itaque distinctio
           unde, molestias inventore officia?
         </p>
-        <Address />
-        <Phone />
-        <AlternatePhone />
-        <OpeningHours />
+        <div className="grid grid-cols-2 gap-12">
+          <div className="flex flex-col gap-12">
+            <Address />
+            <Phone />
+          </div>
+          <OpeningHours />
+        </div>
       </Container>
       <Map />
       <Footer />

@@ -6,7 +6,7 @@ interface Props {
   href: string;
 }
 
-export function NavbarItem({ children, href }: Props) {
+export const NavbarItem: React.FC<Props> = ({ children, href }) => {
   const router = useRouter();
   const active = href === router.pathname;
 
@@ -22,4 +22,4 @@ export function NavbarItem({ children, href }: Props) {
       {children}
     </Link>
   );
-}
+};
