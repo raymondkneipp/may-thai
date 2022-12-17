@@ -22,12 +22,81 @@ export function Map() {
 		<GoogleMap
 			zoom={15}
 			center={center}
-			mapContainerClassName="w-full min-h-screen bg-stone-200"
+			mapContainerClassName="w-full h-[50vh]"
 			options={{
 				styles: [
 					{
+						featureType: 'administrative',
+						elementType: 'labels.text.fill',
+						stylers: [
+							{
+								color: '#444444',
+							},
+						],
+					},
+					{
+						featureType: 'landscape',
+						elementType: 'all',
+						stylers: [
+							{
+								color: '#F5F5F4',
+							},
+							{
+								visibility: 'on',
+							},
+						],
+					},
+					{
 						featureType: 'poi',
-						elementType: 'lables',
+						elementType: 'all',
+						stylers: [
+							{
+								visibility: 'off',
+							},
+						],
+					},
+					{
+						featureType: 'road',
+						elementType: 'all',
+						stylers: [
+							{
+								saturation: 0,
+							},
+							{
+								lightness: 0,
+							},
+						],
+					},
+					{
+						featureType: 'road.highway',
+						elementType: 'all',
+						stylers: [
+							{
+								visibility: 'simplified',
+							},
+						],
+					},
+					{
+						featureType: 'road.arterial',
+						elementType: 'labels.icon',
+						stylers: [
+							{
+								visibility: 'off',
+							},
+						],
+					},
+					{
+						featureType: 'transit',
+						elementType: 'all',
+						stylers: [
+							{
+								visibility: 'off',
+							},
+						],
+					},
+					{
+						featureType: 'water',
+						elementType: 'all',
 						stylers: [
 							{
 								visibility: 'off',
