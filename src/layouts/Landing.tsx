@@ -1,3 +1,4 @@
+import { Footer } from "@components";
 interface Props {
   children: React.ReactNode;
 }
@@ -5,8 +6,8 @@ interface Props {
 export const LandingLayout: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <div>landing</div>
       {children}
+      <Footer />
     </>
   );
 };

@@ -1,3 +1,5 @@
+import { Footer, Navbar } from "@components";
+
 interface Props {
   children: React.ReactNode;
 }
@@ -5,8 +7,9 @@ interface Props {
 export const DefaultLayout: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <div>default</div>
+      <Navbar />
       {children}
+      <Footer />
     </>
   );
 };

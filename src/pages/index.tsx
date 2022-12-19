@@ -1,4 +1,4 @@
-import { Footer, Hero, Testimonials, CTA, Gallery } from "@components";
+import { Hero, Testimonials, CTA, Gallery } from "@components";
 import { LandingLayout } from "@layouts";
 
 export default function Home() {
@@ -8,7 +8,6 @@ export default function Home() {
       <Testimonials />
       <Gallery />
       <CTA />
-      <Footer />
     </LandingLayout>
   );
 }

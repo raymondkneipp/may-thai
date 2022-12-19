@@ -1,19 +1,10 @@
-import {
-  Address,
-  Container,
-  Footer,
-  Map,
-  Navbar,
-  OpeningHours,
-  Phone,
-} from "@components";
+import { Address, Container, Map, OpeningHours, Phone } from "@components";
 import { DefaultLayout } from "@layouts";
 
 export default function Contact() {
   return (
     <DefaultLayout>
-      <Navbar />
-      <Container>
+      <Container className="flex flex-col gap-6">
         <h1 className="font-fancy leading-fancy text-fancy">
           Contact <span className="text-red-600">Us</span>
         </h1>
@@ -32,7 +23,6 @@ export default function Contact() {
         </div>
       </Container>
       <Map />
-      <Footer />
     </DefaultLayout>
   );
 }
