@@ -5,6 +5,7 @@ import {
   OpeningHours,
   Logo,
   Card,
+  Anchor,
 } from "@components";
 import { NAV_ROUTES } from "@constants";
 import Link from "next/link";
@@ -28,7 +29,7 @@ export const Footer: React.FC = () => {
             <ul>
               {NAV_ROUTES.map((route) => (
                 <li key={route.label}>
-                  <Link href={route.href}>{route.label}</Link>
+                  <Anchor href={route.href}>{route.label}</Anchor>
                 </li>
               ))}
             </ul>

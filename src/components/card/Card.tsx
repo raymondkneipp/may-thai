@@ -16,7 +16,7 @@ export const Card: React.FC<Props> = ({ children, icon, label }) => {
         </div>
         <h2 className="text-lg font-bold">{label}</h2>
       </div>
-      {children}
+      <div className="flex flex-col gap-1">{children}</div>
     </div>
   );
 };

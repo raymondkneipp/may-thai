@@ -10,3 +10,4 @@ export * from "./gallery";
 export * from "./map";
 export * from "./contact";
 export * from "./card";
+export * from "./anchor";
