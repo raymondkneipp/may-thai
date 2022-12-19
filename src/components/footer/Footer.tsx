@@ -8,22 +8,14 @@ import {
   Anchor,
 } from "@components";
 import { NAV_ROUTES } from "@constants";
-import Link from "next/link";
 import { BsLink45Deg } from "react-icons/bs";
 
 export const Footer: React.FC = () => {
   return (
     <footer className="py-12">
-      <Container>
-        <div className="flex items-start justify-between">
+      <Container className="flex flex-col gap-6 items-center">
+        <div className="flex items-start justify-between w-full flex-col md:flex-row gap-6">
           <Logo />
-
-          <div className="flex flex-col gap-3">
-            <Address />
-            <Phone />
-          </div>
-
-          <OpeningHours />
 
           <Card icon={BsLink45Deg} label="Pages">
             <ul>
@@ -34,11 +26,16 @@ export const Footer: React.FC = () => {
               ))}
             </ul>
           </Card>
+
+          <Address />
+          <Phone />
+
+          <OpeningHours />
         </div>
 
-        <Link href="https://raymondkneipp.com">
+        <Anchor href="https://raymondkneipp.com">
           Website created by Raymond Kneipp
-        </Link>
+        </Anchor>
       </Container>
     </footer>
   );

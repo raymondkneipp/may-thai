@@ -4,22 +4,26 @@ import { DefaultLayout } from "@layouts";
 export default function Contact() {
   return (
     <DefaultLayout>
-      <Container className="flex flex-col gap-6 py-12">
+      <Container className="py-12 flex flex-col gap-6">
         <h1 className="font-fancy leading-fancy text-fancy">
           Contact <span className="text-red-600">Us</span>
         </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-          facilis repellendus dolorum temporibus harum laborum perspiciatis at
-          assumenda sunt, expedita quidem, est sint reiciendis itaque distinctio
-          unde, molestias inventore officia?
-        </p>
-        <div className="grid grid-cols-2 gap-12">
-          <div className="flex flex-col gap-12">
-            <Address />
-            <Phone />
+
+        <div className="grid md:grid-cols-2 gap-6">
+          <p className="max-w-screen-sm">
+            Please come and join us for lunch or dinner today, or call ahead to
+            place an order for takeout. We'll be looking forward to seeing you.
+          </p>
+
+          <div className="flex flex-col gap-6">
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="flex flex-col gap-6">
+                <Address />
+                <Phone />
+              </div>
+              <OpeningHours />
+            </div>
           </div>
-          <OpeningHours />
         </div>
       </Container>
       <Map />

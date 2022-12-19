@@ -3,7 +3,7 @@ import { Container } from "@components";
 
 export const Testimonials: React.FC = () => {
   return (
-    <section className="py-12">
+    <section className="py-12 overflow-hidden">
       <Container className="flex flex-col gap-6">
         <h2 className="font-fancy text-6xl text-center text-red-600">
           Testimonials{" "}
