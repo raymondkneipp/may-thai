@@ -1,15 +1,16 @@
 import { OPENING_HOURS } from "@constants";
 import { Card } from "@components";
 import { BsClock } from "react-icons/bs";
+import { format, isSameDay, parse } from "date-fns";
 
 const daysOfWeek = [
+  "Sunday",
   "Monday",
   "Tuesday",
   "Wednesday",
   "Thursday",
   "Friday",
   "Saturday",
-  "Sunday",
 ] as const;
 type DayOfWeek = typeof daysOfWeek[number];
 
@@ -24,27 +25,34 @@ function getHoursFromDay(dayofWeek: DayOfWeek) {
     return "Closed";
   }
 
-  return `${dayFound.opens} - ${dayFound.closes}`;
-}
+  const openTime = format(
+    parse(dayFound.opens, "HH:mm", new Date()),
+    "hh:mm aaa"
+  );
+  const closeTime = format(
+    parse(dayFound.closes, "HH:mm", new Date()),
+    "hh:mm aaa"
+  );
 
-{
-  /* hightlight current day */
-}
-{
-  /* date-fns format times */
-}
-{
-  /* time tag? */
+  return `${openTime} - ${closeTime}`;
 }
 
 export const OpeningHours: React.FC = () => {
+  const today = new Date();
+
   return (
     <Card icon={BsClock} label="Hours">
-      {daysOfWeek.map((day) => (
-        <p className="text-stone-600" key={day}>
-          {day.slice(0, 3)}: {getHoursFromDay(day)}
-        </p>
-      ))}
+      {daysOfWeek.map((day) => {
+        const active = isSameDay(parse(day, "EEEE", new Date()), today);
+        return (
+          <p
+            className={`${active ? "text-red-600" : "text-stone-600"}`}
+            key={day}
+          >
+            {day.slice(0, 3)}: {getHoursFromDay(day)}
+          </p>
+        );
+      })}
     </Card>
   );
 };
