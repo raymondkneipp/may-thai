@@ -12,7 +12,8 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-6">
           <p className="max-w-screen-sm">
             Please come and join us for lunch or dinner today, or call ahead to
-            place an order for takeout. We'll be looking forward to seeing you.
+            place an order for takeout. We&apos;ll be looking forward to seeing
+            you.
           </p>
 
           <div className="flex flex-col gap-6">
