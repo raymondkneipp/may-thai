@@ -1,7 +1,7 @@
 import { Hero, Testimonials, CTA, Gallery } from "@components";
 import { LandingLayout } from "@layouts";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <LandingLayout>
       <Hero />

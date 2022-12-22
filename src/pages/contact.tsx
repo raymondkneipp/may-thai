@@ -1,7 +1,7 @@
 import { Address, Container, Map, OpeningHours, Phone } from "@components";
 import { DefaultLayout } from "@layouts";
 
-export default function Contact() {
+export default function ContactPage() {
   return (
     <DefaultLayout>
       <Container className="py-12 flex flex-col gap-6">
@@ -10,7 +10,7 @@ export default function Contact() {
         </h1>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <p className="max-w-screen-sm">
+          <p className="max-w-screen-sm text-lg">
             Please come and join us for lunch or dinner today, or call ahead to
             place an order for takeout. We&apos;ll be looking forward to seeing
             you.

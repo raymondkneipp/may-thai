@@ -1,3 +1,5 @@
+export * from "./menus";
+
 interface Route {
   href: string;
   label: string;

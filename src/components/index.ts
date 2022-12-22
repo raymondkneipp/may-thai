@@ -11,3 +11,4 @@ export * from "./map";
 export * from "./contact";
 export * from "./card";
 export * from "./anchor";
+export * from "./menu";
