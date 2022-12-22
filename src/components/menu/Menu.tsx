@@ -12,7 +12,7 @@ export const Menu: React.FC<IMenu> = ({
       <div className="flex flex-col gap-1">
         <div className="flex items-baseline gap-3">
           <div className="h-px w-full bg-red-600 flex-1"></div>
-          <h2 className="text-4xl text-red-600 font-fancy text-center">
+          <h2 className="text-5xl text-red-600 font-fancy text-center">
             {name}
           </h2>
           <div className="h-px w-full bg-red-600 flex-1"></div>

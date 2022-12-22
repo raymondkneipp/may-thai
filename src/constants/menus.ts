@@ -45,7 +45,7 @@ export const DESSERT: IMenu = {
   ],
 };
 
-export const CHINESE_PLATTERS: IMenu = {
+export const CHINESE_DINNERS: IMenu = {
   name: "Chinese Dinner Platters",
   description:
     "One person portion. Served with one Egg Roll, Steamed Rice or Fried Rice. Additional $1.00 for choice of Vegetable Soup, Egg Drop Soup, or Hot & Sour Soup.",
@@ -153,7 +153,7 @@ export const CHINESE_PLATTERS: IMenu = {
   ],
 };
 
-export const THAI_PLATTERS: IMenu = {
+export const THAI_DINNERS: IMenu = {
   name: "Thai Dinner Platters",
   description:
     "One person portion. Served with one Egg Roll, Steamed Rice or Fried Rice. Additional $1.00 for choice of Vegetable Soup, Egg Drop Soup, or Hot & Sour Soup.",
@@ -228,7 +228,7 @@ export const THAI_PLATTERS: IMenu = {
 
 export const VEGETARIAN: IMenu = {
   name: "Vegetarian",
-  description: "Monk chicken (flour)",
+  description: "Mock chicken (flour)",
   dishes: [
     {
       name: "Basil",
@@ -753,43 +753,471 @@ export const THAI_STIR_FRY: IMenu = {
     },
     {
       name: "Racha Noodles",
-      description: "Egg noodles with egg, onion, tomato and carrot stir fried in tomato sauce.",
+      description:
+        "Egg noodles with egg, onion, tomato and carrot stir fried in tomato sauce.",
       spicy: true,
     },
     {
       name: "Path See Ew",
-      description: "Rice noodle with egg, carrots and broccoli stir fried in a dark soy sauce with black pepper.",
+      description:
+        "Rice noodle with egg, carrots and broccoli stir fried in a dark soy sauce with black pepper.",
       spicy: true,
     },
     {
       name: "Path Khee Mao",
-      description: "The rice stick noodles are stir fried with Thai basil, chili sauce, and broccoli, and onion, mushroom and sweet red pepper.",
+      description:
+        "The rice stick noodles are stir fried with Thai basil, chili sauce, and broccoli, and onion, mushroom and sweet red pepper.",
       spicy: true,
     },
     {
       name: "May-Thai Noodles",
-      description: "Rice noodles with egg, green onion, carrot, bean sprout, onion stir fried in spicy chef sauce.",
+      description:
+        "Rice noodles with egg, green onion, carrot, bean sprout, onion stir fried in spicy chef sauce.",
       spicy: true,
     },
     {
       name: "Pad Thai",
-      description: "When one thinks of Thai cuisine, this may very well be the first dish that comes to mind. The thin rice stick noodles is stir fried in flavorful seasonings with egg, ground peanut, green onion and fresh bean sprout.",
+      description:
+        "When one thinks of Thai cuisine, this may very well be the first dish that comes to mind. The thin rice stick noodles is stir fried in flavorful seasonings with egg, ground peanut, green onion and fresh bean sprout.",
       spicy: true,
     },
     {
       name: "May-Thai Fried Rice",
-      description: "Fried rice prepared the traditional way, stir fried in tomato ketchup, soy sauce with egg, bean sprout, onion, pea and carrot, a wonderful complement to other main course dishes.",
+      description:
+        "Fried rice prepared the traditional way, stir fried in tomato ketchup, soy sauce with egg, bean sprout, onion, pea and carrot, a wonderful complement to other main course dishes.",
       spicy: true,
     },
     {
       name: "Spicy Thai Fried Rice",
-      description: "For those who like the hot, rice is stir fried with egg, chili sauce, Thai basil, onion, pea and carrot.",
+      description:
+        "For those who like the hot, rice is stir fried with egg, chili sauce, Thai basil, onion, pea and carrot.",
       spicy: true,
     },
     {
       name: "Thai Pineapple Fried Rice",
-      description: "A colorful Thai dish, everyone will enjoy it. Mild in flavor, rice stir fried with yellow curry powder, eggs scallions, pineapple, strips of sweet red pepper and cashew, garnished with fresh coriander.",
+      description:
+        "A colorful Thai dish, everyone will enjoy it. Mild in flavor, rice stir fried with yellow curry powder, eggs scallions, pineapple, strips of sweet red pepper and cashew, garnished with fresh coriander.",
       spicy: true,
     },
   ],
 };
+
+export const CHINESE_ENTREES: IMenu = {
+  name: "Chinese Entrees",
+  proteins: [
+    {
+      name: "Chicken, Pork, Veggies, or Tofu",
+      price: 11.25,
+    },
+    {
+      name: "Shrimp or Beef",
+      price: 13.95,
+    },
+  ],
+  dishes: [
+    {
+      name: "Almond",
+      description: "Mix vegetables in brown sauce and almond nut.",
+    },
+    {
+      name: "Black Bean",
+      description: "Mix vegetables with black bean sauce.",
+      spicy: true,
+    },
+    {
+      name: "Broccoli",
+      description: "Broccoli and carrot stir fried in brown sauce.",
+    },
+    {
+      name: "Cashew Nut",
+      description:
+        "Diced water chestnuts, celery, carrot and top with cashew nut in brown sauce.",
+    },
+    {
+      name: "Chinese Garlic",
+      description: "Mix vegetables in hot spicy garlic sauce.",
+      spicy: true,
+    },
+    {
+      name: "Chow Mein",
+      description:
+        "Napa, bean sprout, carrot, water chestnuts, bamboo shoot, onion, celery, mushroom, chicken and shrimp in white wine sauce, pork and beef in brown sauce.",
+    },
+    {
+      name: "Curry",
+      description:
+        "Onion, green pepper, carrot, bamboo shoot in chef special curry sauce.",
+      spicy: true,
+    },
+    {
+      name: "Hunan",
+      description:
+        "Broccoli, mushroom, baby corn, carrot, green pepper stir fried in spicy chef red pepper sauce.",
+      spicy: true,
+    },
+    {
+      name: "Kung Pao",
+      description:
+        "Diced water chestnut,celery,carrot, red pepper in spicy brown sauce and top with peanut.",
+      spicy: true,
+    },
+    {
+      name: "Mongolian",
+      description:
+        "Shredded green onion white onion and bamboo shoot in chef Mongolian sauce.",
+    },
+    {
+      name: "Moo Goo Gai Pan",
+      description:
+        "Mushroom, napa, carrot, water chestnut, bamboo shoot in white wine sauce.",
+    },
+    {
+      name: "Onion Pepper",
+      description:
+        "Onion, green pepper, bamboo shoot stir fried in brown sauce.",
+    },
+    {
+      name: "Sa Cha",
+      description:
+        "Broccoli, onion, carrot, mushroom,baby corn, green pepper in Chinese B.B.Q. sauce.",
+      spicy: true,
+    },
+    {
+      name: "Sweet and Sour (Chicken or Shrimp)",
+      description:
+        "Pineapple, green pepper, onion and carrot sauteed in sweet and sour sauce.",
+    },
+    {
+      name: "Szechuan",
+      description:
+        "Broccoli, bamboo shoot, carrot, water chestnut, green pepper and celery stir fried with hot and spicy Szechuan sauce.",
+      spicy: true,
+    },
+    {
+      name: "Vegetable",
+      description: "Mix vegetable stir fried in brown sauce.",
+    },
+  ],
+};
+
+export const CHINESE_NOODLES: IMenu = {
+  name: "Chinese Noodles",
+  proteins: [
+    {
+      name: "Chicken, Pork, Veggies, or Tofu",
+      price: 10.75,
+    },
+    {
+      name: "Shrimp or Beef",
+      price: 11.75,
+    },
+    {
+      name: "Combination",
+      description: "Beef, chicken, Shrimp",
+      price: 12.75,
+    },
+  ],
+  dishes: [
+    {
+      name: "Ho Fun",
+    },
+    {
+      name: "Hunan Noodles",
+      spicy: true,
+    },
+    {
+      name: "Indian Noodles",
+      spicy: true,
+    },
+    {
+      name: "Lo Mein",
+    },
+    {
+      name: "Mai Fun",
+    },
+    {
+      name: "Singapore Noodles",
+      spicy: true,
+    },
+    {
+      name: "Szechuan Noodles",
+      spicy: true,
+    },
+  ]
+}
+
+export const FRIED_RICE: IMenu = {
+  name: "Fried Rice",
+  dishes: [
+    {
+      name: "Chicken, Pork, Veggies, or Tofu",
+      price: 8.95
+    },
+    {
+      name: "Shrimp or Beef",
+      price: 9.95
+    },
+    {
+      name: "Combination",
+      description: "Beef, Chicken, Shrimp",
+      price: 10.95
+    },
+  ]
+}
+
+export const EGG_FOO_YOUNG: IMenu = {
+  name: "Egg Foo Young",
+  dishes: [
+    {
+      name: "Chicken, Pork, or Veggies",
+      price: 11.95
+    },
+    {
+      name: "Shrimp or Beef",
+      price: 13.95
+    },
+    {
+      name: "Combination",
+      description: "Beef, Chicken, Shrimp",
+      price: 15.95
+    },
+  ]
+}
+
+export const THAI_LUNCH: IMenu = {
+  name: "Thai Daily Lunch Specials",
+  description: "Served 11:00am to 3:00pm. Served with Crab Rangoon, Fried Rice or Steamed Rice. Add $1.50 for egg roll. Noodle dishes do not come with rice",
+  proteins: [
+    {
+      name: "Chicken, Pork, Veggies, or Tofu",
+      price: 8.25
+    },
+    {
+      name: "Shrimp or Beef",
+      price: 9.25
+    },
+  ],
+  dishes: [
+    {
+      name: "Basil",
+      spicy: true,
+    },
+    {
+      name: "Ginger",
+      spicy: true,
+    },
+    {
+      name: "May-Thai Delight",
+      spicy: true,
+    },
+    {
+      name: "Orange Cashew Nut",
+      spicy: true,
+    },
+    {
+      name: "Pad Thai",
+      spicy: true,
+    },
+    {
+      name: "Path Khee Mao",
+      spicy: true,
+    },
+    {
+      name: "Racha Noodles",
+      spicy: true,
+    },
+    {
+      name: "Royal",
+      spicy: true,
+    },
+    {
+      name: "Royal Noodles",
+      spicy: true,
+    },
+    {
+      name: "Spicy Fried Rice",
+      spicy: true,
+    },
+    {
+      name: "Thai Pineapple Fried Rice",
+      spicy: true,
+    },
+    {
+      name: "Thai Spicy",
+      spicy: true,
+    },
+    {
+      name: "Ginger Fish",
+      spicy: true,
+      price: 9.50,
+    },
+    {
+      name: "Spicy Salmon",
+      spicy: true,
+      price: 11.95,
+    },
+    {
+      name: "Sweet & Sour Fish",
+      spicy: true,
+      price: 9.50,
+    },
+  ]
+}
+
+export const CURRY_LUNCH: IMenu = {
+  name: "Curry Daily Lunch Specials",
+  description: "Served 11:00am to 3:00pm. Served with Crab Rangoon, Fried Rice or Steamed Rice. Add $1.50 for egg roll.",
+  proteins: [
+    {
+      name: "Chicken, Pork, Veggies, or Tofu",
+      price: 8.25
+    },
+    {
+      name: "Shrimp or Beef",
+      price: 9.25
+    },
+  ],
+  dishes: [
+    {
+      name: "Panang Curry",
+      spicy: true,
+    },
+    {
+      name: "Yellow Curry",
+      spicy: true,
+    },
+    {
+      name: "Jungle Curry",
+      spicy: true,
+    },
+    {
+      name: "Masaman Curry",
+      spicy: true,
+    },
+    {
+      name: "Red Curry",
+      spicy: true,
+    },
+  ]
+}
+
+export const CHINESE_LUNCH: IMenu = {
+  name: "Chinese Daily Lunch Specials",
+  description: "Served 11:00am to 3:00pm. Served with Crab Rangoon, Fried Rice or Steamed Rice. Add $1.50 for egg roll. Noodle dishes do not come with rice.",
+  proteins: [
+    {
+      name: "Chicken, Pork, Veggies, or Tofu",
+      price: 8.25
+    },
+    {
+      name: "Shrimp or Beef",
+      price: 9.25
+    },
+  ],
+  dishes: [
+    {
+      name: "Indian Noodles",
+      spicy: true,
+    },
+    {
+      name: "Almond Nuts",
+    },
+    {
+      name: "Cashew Nuts",
+    },
+    {
+      name: "Rice Noodles (Mai Fun)",
+    },
+    {
+      name: "Lo Mein",
+    },
+    {
+      name: "Fried Rice",
+    },
+    {
+      name: "Moo goo Gai Pan",
+    },
+    {
+      name: "Mongolian",
+    },
+    {
+      name: "Kung Pao",
+      spicy: true,
+    },
+    {
+      name: "Hunan",
+      spicy: true,
+    },
+    {
+      name: "Szechuan",
+      spicy: true,
+    },
+    {
+      name: "Vegetable",
+    },
+    {
+      name: "General Tso's Chicken",
+      description: "White meat: +$1.00",
+    },
+    {
+      name: "Sesame Chicken",
+      description: "White meat: +$1.00",
+    },
+  ]
+}
+
+export const CURRY: IMenu = {
+  name: "Curry Dishes",
+  proteins: [
+    {
+      name: "Chicken, Pork, Veggies, or Tofu",
+      price: 11.95,
+    },
+    {
+      name: "Shrimp of Beef",
+      price: 13.95,
+    },
+    {
+      name: "Combination",
+      description: "Shrimp, beef, chicken",
+      price: 15.95,
+    },
+    {
+      name: "Seafood",
+      description: "Shrimp, crabmeat, scallop, mussels",
+      price: 17.95,
+    },
+  ],
+  dishes: [
+    {
+      name: "Jungle Curry",
+      description: "Green bean, carrots, onions, bell peppers and basil in coconut milk and red curry sauce.",
+      spicy: true
+    },
+    {
+      name: "Masaman Curry",
+      description: "Aromatic curry with potatoes, onions, carrots and peanuts.",
+      spicy: true
+    },
+    {
+      name: "Panang Curry",
+      description: "A curry of cardamom with lemongrass.",
+      spicy: true
+    },
+    {
+      name: "Peanut Curry",
+      description: "Onions and bell pepper in May-Thai peanut red curry sauce.",
+      spicy: true
+    },
+    {
+      name: "Red Curry",
+      description: "Flavored with garlic, shrimp paste and dried red chili in reddish-brown color. The vegetables include eggplant, carrot, bamboo shoot and bell pepper.",
+      spicy: true
+    },
+    {
+      name: "Yellow Curry",
+      description: "Flavored with lemongrass and turmeric with pineapples, baby corn and carrot.",
+      spicy: true
+    },
+  ]
+}

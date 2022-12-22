@@ -1,14 +1,22 @@
 import { Container, Menu } from "@components";
 import {
   APPETIZERS,
-  CHINESE_PLATTERS,
+  CHINESE_DINNERS,
+  CHINESE_ENTREES,
+  CHINESE_LUNCH,
+  CHINESE_NOODLES,
   CHINESE_SPECIALS,
+  CURRY,
+  CURRY_LUNCH,
   DESSERT,
+  EGG_FOO_YOUNG,
+  FRIED_RICE,
   KIDS,
   SALADS,
   SOUPS,
+  THAI_DINNERS,
   THAI_ENTREES,
-  THAI_PLATTERS,
+  THAI_LUNCH,
   THAI_SPECIALS,
   THAI_STIR_FRY,
   VEGETARIAN,
@@ -29,18 +37,34 @@ export default function MenuPage() {
         </p>
 
         <div className="flex flex-col gap-6">
-          <Menu {...KIDS} />
-          <Menu {...DESSERT} />
-          <Menu {...CHINESE_PLATTERS} />
-          <Menu {...THAI_PLATTERS} />
-          <Menu {...VEGETARIAN} />
-          <Menu {...CHINESE_SPECIALS} />
-          <Menu {...THAI_SPECIALS} />
+          <Menu {...THAI_LUNCH} />
+          <Menu {...CURRY_LUNCH} />
+          <Menu {...CHINESE_LUNCH} />
+
+          <Menu {...CURRY} />
+
           <Menu {...APPETIZERS} />
           <Menu {...SOUPS} />
           <Menu {...SALADS} />
+
+          <Menu {...CHINESE_SPECIALS} />
+          <Menu {...THAI_SPECIALS} />
+
+          <Menu {...CHINESE_DINNERS} />
+          <Menu {...THAI_DINNERS} />
+
+          <Menu {...VEGETARIAN} />
+
           <Menu {...THAI_ENTREES} />
           <Menu {...THAI_STIR_FRY} />
+
+          <Menu {...CHINESE_ENTREES} />
+          <Menu {...CHINESE_NOODLES} />
+          <Menu {...FRIED_RICE} />
+          <Menu {...EGG_FOO_YOUNG} />
+
+          <Menu {...KIDS} />
+          <Menu {...DESSERT} />
         </div>
       </Container>
     </DefaultLayout>
