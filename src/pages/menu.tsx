@@ -21,15 +21,18 @@ export default function MenuPage() {
 
         <Tab.Group selectedIndex={tabIndex} onChange={setTabIndex}>
           <Tab.List className="flex gap-3 flex-wrap">
-            {MENUS.map((menu) => (
-              <Tab className="rounded-2xl font-bold uppercase flex gap-3 bg-wide bg-[0%] transition-all hover:bg-[100%] duration-300 bg-gradient-to-r from-red-600 via-red-400 to-red-500 text-white shadow-red-400 text-sm py-1.5 px-3 shadow-md">
+            {MENUS.map((menu, index) => (
+              <Tab
+                key={`${menu.name}-${index}-tab`}
+                className="rounded-2xl font-bold uppercase flex gap-3 bg-wide bg-[0%] transition-all hover:bg-[100%] duration-300 bg-gradient-to-r from-red-600 via-red-400 to-red-500 text-white shadow-red-400 text-sm py-1.5 px-3 shadow-md"
+              >
                 {menu.name}
               </Tab>
             ))}
           </Tab.List>
           <Tab.Panels>
             {MENUS.map((menu, index) => (
-              <Tab.Panel>
+              <Tab.Panel key={`${menu.name}-${index}-menu`}>
                 <Transition
                   show={tabIndex == index}
                   appear
