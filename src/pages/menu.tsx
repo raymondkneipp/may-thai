@@ -25,7 +25,7 @@ export default function MenuPage() {
               <Tab key={`${menu.name}-${index}-tab`} as={Fragment}>
                 {({ selected }) => (
                   <button
-                    className={`rounded-2xl font-bold uppercese bg-wide bg-[0%] transition-all hover:bg-[100%] duration-300 bg-gradient-to-r text-sm py-3 px-6 shadow-md outline-none ${
+                    className={`rounded-2xl font-bold uppercase bg-wide bg-[0%] transition-all hover:bg-[100%] duration-300 bg-gradient-to-r text-sm py-3 px-6 shadow-md outline-none ${
                       selected
                         ? "from-red-600 via-red-400 to-red-500 text-white shadow-red-400"
                         : "from-stone-300 via-stone-100 to-stone-200 shadow-stone-200"

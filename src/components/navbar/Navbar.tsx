@@ -32,7 +32,7 @@ export const Navbar: React.FC = () => {
             leaveTo="transform scale-95 opacity-0"
             className="flex flex-col gap-12"
           >
-            <Popover.Panel className="absolute z-10 right-0 bg-stone-100 rounded-2xl shadow-xl shadow-stone-200 p-3 overflow-hidden mt-3 duration-300">
+            <Popover.Panel className="absolute z-10 right-0 bg-stone-50 rounded-2xl shadow-xl shadow-stone-200 p-3 overflow-hidden mt-3 duration-300">
               <div className="grid items-center gap-3">
                 {NAV_ROUTES.map((page) => (
                   <NavbarItem key={page.label} href={page.href}>
