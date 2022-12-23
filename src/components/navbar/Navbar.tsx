@@ -1,7 +1,7 @@
 import { NAV_ROUTES } from "@constants";
 import { Container, Logo } from "@components";
 import { NavbarItem } from "./navbar-item";
-import { Popover } from "@headlessui/react";
+import { Popover, Transition } from "@headlessui/react";
 import { BsList } from "react-icons/bs";
 
 export const Navbar: React.FC = () => {
@@ -23,15 +23,25 @@ export const Navbar: React.FC = () => {
             <BsList size={24} />
           </Popover.Button>
 
-          <Popover.Panel className="absolute z-10 right-0 bg-stone-100 rounded-2xl shadow-xl shadow-stone-200 p-3 overflow-hidden mt-3 duration-300">
-            <div className="grid items-center gap-3">
-              {NAV_ROUTES.map((page) => (
-                <NavbarItem key={page.label} href={page.href}>
-                  {page.label}
-                </NavbarItem>
-              ))}
-            </div>
-          </Popover.Panel>
+          <Transition
+            enter="transition duration-100 ease-out"
+            enterFrom="transform scale-95 opacity-0"
+            enterTo="transform scale-100 opacity-100"
+            leave="transition duration-75 ease-out"
+            leaveFrom="transform scale-100 opacity-100"
+            leaveTo="transform scale-95 opacity-0"
+            className="flex flex-col gap-12"
+          >
+            <Popover.Panel className="absolute z-10 right-0 bg-stone-100 rounded-2xl shadow-xl shadow-stone-200 p-3 overflow-hidden mt-3 duration-300">
+              <div className="grid items-center gap-3">
+                {NAV_ROUTES.map((page) => (
+                  <NavbarItem key={page.label} href={page.href}>
+                    {page.label}
+                  </NavbarItem>
+                ))}
+              </div>
+            </Popover.Panel>
+          </Transition>
         </Popover>
       </nav>
     </Container>
