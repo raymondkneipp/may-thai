@@ -8,7 +8,7 @@ export const Dish: React.FC<IDish> = ({
   spicy = false,
 }) => {
   return (
-    <div className="shadow-xl shadow-stone-200 rounded-2xl p-3 bg-stone-50 flex flex-col gap-1">
+    <div className="shadow-lg shadow-stone-200 rounded-2xl p-3 bg-stone-50 flex flex-col gap-1">
       <div className="flex items-center justify-between gap-3">
         {spicy && (
           <span className="text-red-600">

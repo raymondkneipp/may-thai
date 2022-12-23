@@ -8,7 +8,10 @@ export const Menu: React.FC<IMenu> = ({
   proteins,
 }) => {
   return (
-    <div className="flex flex-col gap-3">
+    <div
+      className="flex flex-col gap-6"
+      id={name.replaceAll(" ", "-").toLowerCase()}
+    >
       <div className="flex flex-col gap-1">
         <div className="flex items-baseline gap-3">
           <div className="h-px w-full bg-red-600 flex-1"></div>

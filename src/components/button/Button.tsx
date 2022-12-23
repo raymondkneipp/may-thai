@@ -2,7 +2,7 @@ import Link from "next/link";
 import { cva, type VariantProps } from "class-variance-authority";
 
 const button = cva(
-  "rounded-2xl font-bold uppercase flex gap-3 bg-wide bg-[0%] transition-all hover:bg-[100%] duration-300 shadow-xl",
+  "rounded-2xl font-bold uppercase flex gap-3 bg-wide bg-[0%] transition-all hover:bg-[100%] duration-300",
   {
     variants: {
       intent: {
@@ -23,9 +23,9 @@ const button = cva(
         ],
       },
       size: {
-        small: ["text-sm", "py-1", "px-2"],
-        medium: ["text-base", "py-3", "px-6"],
-        large: ["text-base", "py-4", "px-7"],
+        small: ["text-sm", "py-1.5", "px-3", "shadow-md"],
+        medium: ["text-base", "py-3", "px-6", "shadow-lg"],
+        large: ["text-base", "py-4", "px-7", "shadow-xl"],
       },
     },
     defaultVariants: {
