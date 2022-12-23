@@ -13,7 +13,7 @@ export const NavbarItem: React.FC<Props> = ({ children, href }) => {
   return (
     <Link
       href={href}
-      className={`py-3 px-6 rounded-2xl ${
+      className={`py-3 px-6 rounded-2xl text-center ${
         active
           ? "bg-stone-50 shadow-xl shadow-stone-200"
           : "border-stone-900/10 hover:bg-stone-50 hover:shadow-xl hover:shadow-stone-200 transition-all duration-300"
