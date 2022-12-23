@@ -39,7 +39,7 @@ export default function MenuPage() {
           </Tab.List>
           <Tab.Panels>
             {MENU_GROUPS.map((group, index) => (
-              <Tab.Panel key={`${group.name}-${index}-menu`}>
+              <Tab.Panel key={`${group.name}-${index}-group`}>
                 <Transition
                   show={tabIndex == index}
                   appear
@@ -51,8 +51,8 @@ export default function MenuPage() {
                   leaveTo="transform scale-95 opacity-0"
                   className="flex flex-col gap-12"
                 >
-                  {group.menus.map((menu) => (
-                    <Menu {...menu} />
+                  {group.menus.map((menu, index) => (
+                    <Menu {...menu} key={`${group.name}-${index}-menu`} />
                   ))}
                 </Transition>
               </Tab.Panel>
