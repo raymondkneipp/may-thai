@@ -2,22 +2,22 @@ import Link from "next/link";
 import { cva, type VariantProps } from "class-variance-authority";
 
 const button = cva(
-  "rounded-2xl font-bold uppercase flex gap-3 bg-wide bg-[0%] transition-all hover:bg-[100%] duration-300",
+  "rounded-2xl font-bold uppercase flex gap-3 bg-wide bg-[0%] transition-all hover:bg-[100%] duration-300 bg-gradient-to-r",
   {
     variants: {
       intent: {
         primary: [
-          "bg-gradient-to-r from-red-600 via-red-400 to-red-500",
+          "from-red-600 via-red-400 to-red-500",
           "text-white",
           "shadow-red-400",
         ],
         secondary: [
-          "bg-gradient-to-r from-stone-600 via-stone-400 to-stone-500",
+          "from-stone-600 via-stone-400 to-stone-500",
           "text-white",
           "shadow-stone-400",
         ],
         light: [
-          "bg-gradient-to-r from-stone-300 via-stone-100 to-stone-200",
+          "from-stone-300 via-stone-100 to-stone-200",
           "text-stone-900",
           "shadow-red-300",
         ],

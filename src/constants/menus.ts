@@ -943,58 +943,59 @@ export const CHINESE_NOODLES: IMenu = {
       name: "Szechuan Noodles",
       spicy: true,
     },
-  ]
-}
+  ],
+};
 
 export const FRIED_RICE: IMenu = {
   name: "Fried Rice",
   dishes: [
     {
       name: "Chicken, Pork, Veggies, or Tofu",
-      price: 8.95
+      price: 8.95,
     },
     {
       name: "Shrimp or Beef",
-      price: 9.95
+      price: 9.95,
     },
     {
       name: "Combination",
       description: "Beef, Chicken, Shrimp",
-      price: 10.95
+      price: 10.95,
     },
-  ]
-}
+  ],
+};
 
 export const EGG_FOO_YOUNG: IMenu = {
   name: "Egg Foo Young",
   dishes: [
     {
       name: "Chicken, Pork, or Veggies",
-      price: 11.95
+      price: 11.95,
     },
     {
       name: "Shrimp or Beef",
-      price: 13.95
+      price: 13.95,
     },
     {
       name: "Combination",
       description: "Beef, Chicken, Shrimp",
-      price: 15.95
+      price: 15.95,
     },
-  ]
-}
+  ],
+};
 
 export const THAI_LUNCH: IMenu = {
   name: "Thai Daily Lunch Specials",
-  description: "Served 11:00am to 3:00pm. Served with Crab Rangoon, Fried Rice or Steamed Rice. Add $1.50 for egg roll. Noodle dishes do not come with rice",
+  description:
+    "Served 11:00am to 3:00pm. Served with Crab Rangoon, Fried Rice or Steamed Rice. Add $1.50 for egg roll. Noodle dishes do not come with rice",
   proteins: [
     {
       name: "Chicken, Pork, Veggies, or Tofu",
-      price: 8.25
+      price: 8.25,
     },
     {
       name: "Shrimp or Beef",
-      price: 9.25
+      price: 9.25,
     },
   ],
   dishes: [
@@ -1049,7 +1050,7 @@ export const THAI_LUNCH: IMenu = {
     {
       name: "Ginger Fish",
       spicy: true,
-      price: 9.50,
+      price: 9.5,
     },
     {
       name: "Spicy Salmon",
@@ -1059,22 +1060,23 @@ export const THAI_LUNCH: IMenu = {
     {
       name: "Sweet & Sour Fish",
       spicy: true,
-      price: 9.50,
+      price: 9.5,
     },
-  ]
-}
+  ],
+};
 
 export const CURRY_LUNCH: IMenu = {
   name: "Curry Daily Lunch Specials",
-  description: "Served 11:00am to 3:00pm. Served with Crab Rangoon, Fried Rice or Steamed Rice. Add $1.50 for egg roll.",
+  description:
+    "Served 11:00am to 3:00pm. Served with Crab Rangoon, Fried Rice or Steamed Rice. Add $1.50 for egg roll.",
   proteins: [
     {
       name: "Chicken, Pork, Veggies, or Tofu",
-      price: 8.25
+      price: 8.25,
     },
     {
       name: "Shrimp or Beef",
-      price: 9.25
+      price: 9.25,
     },
   ],
   dishes: [
@@ -1098,20 +1100,21 @@ export const CURRY_LUNCH: IMenu = {
       name: "Red Curry",
       spicy: true,
     },
-  ]
-}
+  ],
+};
 
 export const CHINESE_LUNCH: IMenu = {
   name: "Chinese Daily Lunch Specials",
-  description: "Served 11:00am to 3:00pm. Served with Crab Rangoon, Fried Rice or Steamed Rice. Add $1.50 for egg roll. Noodle dishes do not come with rice.",
+  description:
+    "Served 11:00am to 3:00pm. Served with Crab Rangoon, Fried Rice or Steamed Rice. Add $1.50 for egg roll. Noodle dishes do not come with rice.",
   proteins: [
     {
       name: "Chicken, Pork, Veggies, or Tofu",
-      price: 8.25
+      price: 8.25,
     },
     {
       name: "Shrimp or Beef",
-      price: 9.25
+      price: 9.25,
     },
   ],
   dishes: [
@@ -1163,8 +1166,8 @@ export const CHINESE_LUNCH: IMenu = {
       name: "Sesame Chicken",
       description: "White meat: +$1.00",
     },
-  ]
-}
+  ],
+};
 
 export const CURRY: IMenu = {
   name: "Curry Dishes",
@@ -1191,55 +1194,83 @@ export const CURRY: IMenu = {
   dishes: [
     {
       name: "Jungle Curry",
-      description: "Green bean, carrots, onions, bell peppers and basil in coconut milk and red curry sauce.",
-      spicy: true
+      description:
+        "Green bean, carrots, onions, bell peppers and basil in coconut milk and red curry sauce.",
+      spicy: true,
     },
     {
       name: "Masaman Curry",
       description: "Aromatic curry with potatoes, onions, carrots and peanuts.",
-      spicy: true
+      spicy: true,
     },
     {
       name: "Panang Curry",
       description: "A curry of cardamom with lemongrass.",
-      spicy: true
+      spicy: true,
     },
     {
       name: "Peanut Curry",
       description: "Onions and bell pepper in May-Thai peanut red curry sauce.",
-      spicy: true
+      spicy: true,
     },
     {
       name: "Red Curry",
-      description: "Flavored with garlic, shrimp paste and dried red chili in reddish-brown color. The vegetables include eggplant, carrot, bamboo shoot and bell pepper.",
-      spicy: true
+      description:
+        "Flavored with garlic, shrimp paste and dried red chili in reddish-brown color. The vegetables include eggplant, carrot, bamboo shoot and bell pepper.",
+      spicy: true,
     },
     {
       name: "Yellow Curry",
-      description: "Flavored with lemongrass and turmeric with pineapples, baby corn and carrot.",
-      spicy: true
+      description:
+        "Flavored with lemongrass and turmeric with pineapples, baby corn and carrot.",
+      spicy: true,
     },
-  ]
+  ],
+};
+
+interface IMenuGroup {
+  name: string;
+  menus: IMenu[];
 }
 
-export const MENUS: IMenu[] = [
-  THAI_LUNCH,
-  CURRY_LUNCH,
-  CHINESE_LUNCH,
-  APPETIZERS,
-  SOUPS,
-  SALADS,
-  CURRY,
-  VEGETARIAN,
-  THAI_SPECIALS,
-  THAI_DINNERS,
-  THAI_ENTREES,
-  THAI_STIR_FRY,
-  CHINESE_SPECIALS,
-  CHINESE_DINNERS,
-  CHINESE_ENTREES,
-  CHINESE_NOODLES,
-  FRIED_RICE,
-  EGG_FOO_YOUNG,
-  DESSERT
+export const MENU_GROUPS: IMenuGroup[] = [
+  {
+    name: "Lunch",
+    menus: [THAI_LUNCH, CURRY_LUNCH, CHINESE_LUNCH],
+  },
+  {
+    name: "Soups, Salads, & Appetizers",
+    menus: [SOUPS, SALADS, APPETIZERS],
+  },
+  {
+    name: "Curry",
+    menus: [CURRY],
+  },
+  {
+    name: "Thai",
+    menus: [THAI_SPECIALS, THAI_DINNERS, THAI_ENTREES, THAI_STIR_FRY],
+  },
+  {
+    name: "Chinese",
+    menus: [
+      CHINESE_SPECIALS,
+      CHINESE_DINNERS,
+      CHINESE_ENTREES,
+      CHINESE_NOODLES,
+      FRIED_RICE,
+      EGG_FOO_YOUNG,
+    ],
+  },
+  {
+    name: "Vegetarian",
+    menus: [VEGETARIAN],
+  },
+  {
+    name: "Kids",
+    menus: [KIDS],
+  },
+  {
+    name: "Desserts",
+    menus: [DESSERT],
+  },
 ];

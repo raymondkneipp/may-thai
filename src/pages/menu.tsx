@@ -1,8 +1,8 @@
 import { Container, Menu } from "@components";
 import { Tab, Transition } from "@headlessui/react";
-import { MENUS } from "@constants";
+import { MENU_GROUPS } from "@constants";
 import { DefaultLayout } from "@layouts";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 export default function MenuPage() {
   const [tabIndex, setTabIndex] = useState(0);
@@ -20,19 +20,26 @@ export default function MenuPage() {
         </p>
 
         <Tab.Group selectedIndex={tabIndex} onChange={setTabIndex}>
-          <Tab.List className="flex gap-3 flex-wrap">
-            {MENUS.map((menu, index) => (
-              <Tab
-                key={`${menu.name}-${index}-tab`}
-                className="rounded-2xl font-bold uppercase flex gap-3 bg-wide bg-[0%] transition-all hover:bg-[100%] duration-300 bg-gradient-to-r from-red-600 via-red-400 to-red-500 text-white shadow-red-400 text-sm py-1.5 px-3 shadow-md"
-              >
-                {menu.name}
+          <Tab.List className="w-fit flex gap-3 flex-wrap">
+            {MENU_GROUPS.map((menu, index) => (
+              <Tab key={`${menu.name}-${index}-tab`} as={Fragment}>
+                {({ selected }) => (
+                  <button
+                    className={`rounded-2xl font-bold uppercese bg-wide bg-[0%] transition-all hover:bg-[100%] duration-300 bg-gradient-to-r text-sm py-3 px-6 shadow-md outline-none ${
+                      selected
+                        ? "from-red-600 via-red-400 to-red-500 text-white shadow-red-400"
+                        : "from-stone-300 via-stone-100 to-stone-200 shadow-stone-200"
+                    }`}
+                  >
+                    {menu.name}
+                  </button>
+                )}
               </Tab>
             ))}
           </Tab.List>
           <Tab.Panels>
-            {MENUS.map((menu, index) => (
-              <Tab.Panel key={`${menu.name}-${index}-menu`}>
+            {MENU_GROUPS.map((group, index) => (
+              <Tab.Panel key={`${group.name}-${index}-menu`}>
                 <Transition
                   show={tabIndex == index}
                   appear
@@ -42,8 +49,11 @@ export default function MenuPage() {
                   leave="transition duration-75 ease-out"
                   leaveFrom="transform scale-100 opacity-100"
                   leaveTo="transform scale-95 opacity-0"
+                  className="flex flex-col gap-12"
                 >
-                  <Menu {...menu} />
+                  {group.menus.map((menu) => (
+                    <Menu {...menu} />
+                  ))}
                 </Transition>
               </Tab.Panel>
             ))}
