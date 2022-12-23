@@ -31,8 +31,6 @@ export const Navbar: React.FC = () => {
                 </NavbarItem>
               ))}
             </div>
-
-            <img src="/solutions.jpg" alt="" />
           </Popover.Panel>
         </Popover>
       </nav>
