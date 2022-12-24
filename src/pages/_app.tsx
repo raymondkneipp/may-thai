@@ -1,8 +1,16 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import localFont from "@next/font/local";
-import { NextSeo } from "next-seo";
+import { LocalBusinessJsonLd, LogoJsonLd, NextSeo } from "next-seo";
 import Head from "next/head";
+import {
+  ADDRESS,
+  DOMAIN,
+  GEO,
+  OPENING_HOURS,
+  PHONE_NUMBERS,
+  TESTIMONIALS,
+} from "@constants";
 
 const ballantines = localFont({
   src: "./ballantines-serial-medium-regular.ttf",
@@ -22,6 +30,19 @@ export default function App({ Component, pageProps }: AppProps) {
         titleTemplate="May-Thai | %s | Milford, OH"
         description="Thai curries & stir-fries, plus a few Chinese dishes, in a modern, sunset-colored dining room."
       />
+      <LocalBusinessJsonLd
+        type="Restaurant"
+        id={DOMAIN}
+        name="May-Thai"
+        description="Thai curries & stir-fries, plus a few Chinese dishes, in a modern, sunset-colored dining room."
+        url={DOMAIN}
+        telephone={PHONE_NUMBERS[0]}
+        address={ADDRESS}
+        geo={GEO}
+        openingHours={OPENING_HOURS}
+        review={TESTIMONIALS}
+      />
+      <LogoJsonLd logo={`${DOMAIN}/logo.png`} url={DOMAIN} />
       <div className={`${ballantines.variable} font-sans`}>
         <Component {...pageProps} />
       </div>

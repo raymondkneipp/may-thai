@@ -1,11 +1,12 @@
+import { GEO } from "@constants";
 import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api";
 import { useMemo } from "react";
 
 export const Map: React.FC = () => {
   const center = useMemo(
     () => ({
-      lat: 39.193337569787815,
-      lng: -84.24132654605579,
+      lat: GEO.latitude,
+      lng: GEO.longitude,
     }),
     []
   );

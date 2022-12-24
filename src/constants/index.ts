@@ -1,5 +1,7 @@
 export * from "./menus";
 
+export const DOMAIN = "https://may-thai.vercel.app";
+
 interface Route {
   href: string;
   label: string;
@@ -46,6 +48,11 @@ export const ADDRESS = {
   addressRegion: "OH",
   postalCode: "45150",
   addressCountry: "US",
+};
+
+export const GEO = {
+  latitude: 39.193337569787815,
+  longitude: -84.24132654605579,
 };
 
 export const PHONE_NUMBERS = ["(513) 248-9100", "(513) 248-4089"];
