@@ -48,6 +48,10 @@ export default function App({ Component, pageProps }: AppProps) {
           `${DOMAIN}/images/gallery/3.webp`,
           `${DOMAIN}/images/gallery/4.webp`,
         ]}
+        aggregateRating={{
+          ratingValue: "4.6",
+          reviewCount: "391",
+        }}
       />
       <LogoJsonLd logo={`${DOMAIN}/logo.png`} url={DOMAIN} />
       <div className={`${ballantines.variable} font-sans`}>
