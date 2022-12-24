@@ -43,13 +43,14 @@ export const OpeningHours: React.FC = () => {
 
   useEffect(() => {
     setToday(new Date());
-    console.log(new Date());
+    console.log({ useEffect: "running", today });
   }, []);
 
   return (
     <Card icon={BsClock} label="Hours">
       {daysOfWeek.map((day) => {
         const active = isSameDay(parse(day, "EEEE", new Date()), today);
+        console.log({ active, newDate: new Date(), today });
         return (
           <p
             className={`${active ? "text-red-700" : "text-stone-600"}`}
