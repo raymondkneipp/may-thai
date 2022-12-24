@@ -14,13 +14,13 @@ export const CTA: React.FC = () => {
         </p>
         <div className="flex gap-3 flex-wrap items-center justify-center">
           <Button
-            size="large"
+            size="medium"
             intent="light"
             label="Call Now"
             href={`tel:${PHONE_NUMBERS[0]}`}
           />
           <Button
-            size="large"
+            size="medium"
             intent="primary"
             label="Get Directions"
             href="/"
