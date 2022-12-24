@@ -8,7 +8,7 @@ export const CTA: React.FC = () => {
         <h2 className="font-fancy text-6xl text-white text-center">
           Dine In or Carry Out
         </h2>
-        <p className="text-stone-100 text-center">
+        <p className="text-white text-center">
           Come and have a meal with us today, or give us a call to place an
           order for take out. We look forward to serving you.
         </p>

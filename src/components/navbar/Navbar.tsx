@@ -19,7 +19,10 @@ export const Navbar: React.FC = () => {
         </div>
 
         <Popover className="relative sm:hidden">
-          <Popover.Button className="p-3 bg-stone-100 hover:shadow-xl hover:bg-stone-50 transition-all shadow-stone-200 rounded-2xl">
+          <Popover.Button
+            className="p-3 bg-stone-100 hover:shadow-xl hover:bg-stone-50 transition-all shadow-stone-200 rounded-2xl"
+            aria-label="menu"
+          >
             <BsList size={24} />
           </Popover.Button>
 

@@ -46,7 +46,7 @@ export const OpeningHours: React.FC = () => {
         const active = isSameDay(parse(day, "EEEE", new Date()), today);
         return (
           <p
-            className={`${active ? "text-red-600" : "text-stone-600"}`}
+            className={`${active ? "text-red-700" : "text-stone-600"}`}
             key={day}
           >
             {day.slice(0, 3)}: {getHoursFromDay(day)}
