@@ -1,8 +1,7 @@
 import { OPENING_HOURS } from "@constants";
 import { Card } from "@components";
 import { BsClock } from "react-icons/bs";
-import { format, isSameDay, parse } from "date-fns";
-import { useEffect, useState } from "react";
+import { format, parse, isToday } from "date-fns";
 
 const daysOfWeek = [
   "Sunday",
@@ -39,18 +38,10 @@ function getHoursFromDay(dayofWeek: DayOfWeek) {
 }
 
 export const OpeningHours: React.FC = () => {
-  const [today, setToday] = useState(new Date());
-
-  useEffect(() => {
-    setToday(new Date());
-    console.log({ useEffect: "running", today });
-  }, []);
-
   return (
     <Card icon={BsClock} label="Hours">
       {daysOfWeek.map((day) => {
-        const active = isSameDay(parse(day, "EEEE", new Date()), today);
-        console.log({ active, newDate: new Date(), today });
+        const active = isToday(parse(day, "EEEE", new Date()));
         return (
           <p
             className={`${active ? "text-red-700" : "text-stone-600"}`}
