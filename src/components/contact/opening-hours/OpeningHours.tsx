@@ -2,6 +2,7 @@ import { OPENING_HOURS } from "@constants";
 import { Card } from "@components";
 import { BsClock } from "react-icons/bs";
 import { format, isSameDay, parse } from "date-fns";
+import { useEffect, useState } from "react";
 
 const daysOfWeek = [
   "Sunday",
@@ -38,7 +39,11 @@ function getHoursFromDay(dayofWeek: DayOfWeek) {
 }
 
 export const OpeningHours: React.FC = () => {
-  const today = new Date();
+  const [today, setToday] = useState(new Date());
+
+  useEffect(() => {
+    setToday(new Date());
+  }, []);
 
   return (
     <Card icon={BsClock} label="Hours">
