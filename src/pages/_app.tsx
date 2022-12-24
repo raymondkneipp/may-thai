@@ -41,6 +41,12 @@ export default function App({ Component, pageProps }: AppProps) {
         geo={GEO}
         openingHours={OPENING_HOURS}
         review={TESTIMONIALS}
+        images={[
+          `${DOMAIN}/images/gallery/1.webp`,
+          `${DOMAIN}/images/gallery/2.webp`,
+          `${DOMAIN}/images/gallery/3.webp`,
+          `${DOMAIN}/images/gallery/4.webp`,
+        ]}
       />
       <LogoJsonLd logo={`${DOMAIN}/logo.png`} url={DOMAIN} />
       <div className={`${ballantines.variable} font-sans`}>

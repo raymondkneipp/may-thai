@@ -46,13 +46,13 @@ export const Hero: React.FC = () => {
       </Container>
 
       <Image
-        src="/wood.jpg"
+        src="/images/wood.jpg"
         fill
         alt="wood table top"
         className="z-0 object-cover"
       />
       <Image
-        src="/dish.png"
+        src="/images/dish.png"
         alt="thai dish"
         className="z-0 md:z-10 md:top-24 absolute bottom-0 translate-y-1/2 md:left-1/2 md:inset-0 md:translate-y-0"
         width="900"
