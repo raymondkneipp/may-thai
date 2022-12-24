@@ -41,6 +41,7 @@ export default function App({ Component, pageProps }: AppProps) {
         geo={GEO}
         openingHours={OPENING_HOURS}
         review={TESTIMONIALS}
+        servesCuisine={"Thai, Chinese"}
         images={[
           `${DOMAIN}/images/gallery/1.webp`,
           `${DOMAIN}/images/gallery/2.webp`,
