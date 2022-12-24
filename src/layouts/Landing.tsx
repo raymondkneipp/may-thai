@@ -1,4 +1,5 @@
 import { Footer } from "@components";
+
 interface Props {
   children: React.ReactNode;
 }

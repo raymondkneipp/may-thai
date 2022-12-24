@@ -8,7 +8,7 @@ export default function MenuPage() {
   const [tabIndex, setTabIndex] = useState(0);
 
   return (
-    <DefaultLayout>
+    <DefaultLayout title="Menus">
       <Container className="py-12 flex flex-col gap-6">
         <h1 className="font-fancy leading-fancy text-fancy text-red-600">
           Menus
