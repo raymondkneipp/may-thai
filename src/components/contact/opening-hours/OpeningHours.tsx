@@ -43,6 +43,7 @@ export const OpeningHours: React.FC = () => {
 
   useEffect(() => {
     setToday(new Date());
+    console.log(new Date());
   }, []);
 
   return (
